@@ -1,4 +1,4 @@
-package com.aula.ninjas.service;
+package com.aula.ninjas.Ninja.service;
 
 import org.springframework.stereotype.Service;
 

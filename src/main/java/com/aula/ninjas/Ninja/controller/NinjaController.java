@@ -1,8 +1,7 @@
-package com.aula.ninjas.controller;
+package com.aula.ninjas.Ninja.controller;
 
-import com.aula.ninjas.service.NinjaService;
+import com.aula.ninjas.Ninja.service.NinjaService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

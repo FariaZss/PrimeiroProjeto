@@ -1,9 +1,11 @@
-package com.aula.ninjas.model;
+package com.aula.ninjas.Ninja.model;
 
+import com.aula.ninjas.Missao.model.MissaoModel;
 import jakarta.persistence.*;
-import jdk.jfr.Name;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 
 @Entity //TRANSFORMA A CLASSE EM ENTIDADE NO BANCO DE DADOS - CRIA TABELA
 @Table(name = "tb_cadastro") //ANOTAÇÃO DE CRIAÇÃO DE TABELA E DEFININDO UM NOME
@@ -28,6 +30,11 @@ public class NinjaModel {
     @Getter
     @Setter
     private String rank;
+
+    @Setter
+    @Getter
+    @OneToMany
+    private List<MissaoModel> missoes;
 
     public NinjaModel() {} // NO ARGS CONSTRUCTOR
 
