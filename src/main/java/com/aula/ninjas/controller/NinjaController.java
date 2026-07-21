@@ -20,15 +20,4 @@ public class NinjaController {
     @Autowired
     private NinjaService NinjaService;
 
-    @GetMapping("/nome")
-    public String index(){
-        return NinjaService.index("teste");
-    }
-
-    @GetMapping("/teste")
-    public boolean teste(){
-        return NinjaService.teste(2);
-    }
-
-
 }
